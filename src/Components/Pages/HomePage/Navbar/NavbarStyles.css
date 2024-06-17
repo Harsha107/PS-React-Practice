@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background: white;
+    padding: 20px 80px;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.uList{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+.uList li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.uList li a, .mobile-bar{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: darkcyan;
+    transition: 0.3s ease-in-out;
+}
+
+.uList li a:hover{
+    color: orange;
+}
+
+.uList li #home:hover::after, .uList li #collections:hover::after, .uList li #community-nav:hover::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.mobile-bar{
+    border: none;
+    background: white;
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .uList {
+        display: none;
+    }
+
+    .uList-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.1);
+        left: 0;
+        top: 12%;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .uList-mobile li {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .uList-mobile li a {
+        display: block;
+        padding: 32px;
+        transition: all 0.3s ease-in-out;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: darkcyan;
+    }
+
+    .uList-mobile li a:hover {
+        color: orange;
+    }
+
+    .mobile-bar {
+        position: absolute;
+        display: block;
+        right: 20px;
+    }
+
+    .mobile-bar:hover {
+        color: orange;
+        cursor: pointer;
+    }
+
+    .uList-mobile li #home {
+        padding-top: 50px;
+    }
+}

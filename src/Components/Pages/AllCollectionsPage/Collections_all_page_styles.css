@@ -1,0 +1,31 @@
+.collections-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vm-btn-container{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vm-btn{
+    color: darkcyan;
+    font-weight: 700;
+    border: 2px solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+}
+
+.vm-btn:hover{
+    border-color: white;
+    color: white;
+    background-color: darkcyan;
+    cursor: pointer;
+}

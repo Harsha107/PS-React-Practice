@@ -1,0 +1,16 @@
+.collection{
+    height: 300px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: black; 
+    flex-basis: 44.44%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .collection{
+        flex-basis: 33.33%;
+    }
+}

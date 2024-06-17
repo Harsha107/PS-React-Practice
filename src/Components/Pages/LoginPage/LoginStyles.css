@@ -1,0 +1,80 @@
+.login-form-container{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f8f9fd;
+}
+
+.lgn-inp1,
+.lgn-inp2 {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.lgn-inp3 {
+    margin-top: 10px;
+    background: darkcyan;
+    color: #fff;
+    border: 1px solid darkcyan;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.lgn-inp3:hover{
+    color: darkcyan;
+    background: #fff;
+}
+
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+    display: flex;
+}
+
+.some-error {
+    color: red;
+    font-size: 12px;
+}
+
+.login-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.inp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
+
+.login-footer{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.register-redirect-btn{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}

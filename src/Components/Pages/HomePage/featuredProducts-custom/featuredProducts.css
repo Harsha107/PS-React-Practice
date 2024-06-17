@@ -1,0 +1,40 @@
+.prod-carousel{
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+    z-index: 0;
+}
+
+
+
+.prod-container{
+    padding: 0 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.nxt-btn p, .pre-btn p{
+    font-size: 40px;
+    border-radius: 10px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
